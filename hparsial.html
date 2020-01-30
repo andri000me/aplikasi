@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <title>Hidrolisis Parsial</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    </head>
+    <style>  
+            .atas {
+                width: 100%;
+                height: 30px;
+                background-color: rgb(2, 2, 70);
+                position: absolute;
+                top: 0px;
+                left: 0px; }     
+            
+            .tengah 
+            { width: 100%;
+            height: 100%;
+            background-image: url("bg4.jpg");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            position: fixed;
+            top: 30px;
+            left: 0px; }
+
+            .bawah {position: fixed;
+                bottom: 0;
+                left: 0;
+                background-color: rgb(2, 2, 70);
+                height: 4%;
+                width: 100%; }
+
+            .bgisi {
+              background-color: rgb(2, 2, 70);
+              height: 100%;
+              width: 100%;
+              position: absolute;
+              top: 0px;
+              left: 0px;} 
+            
+            .isi {
+                height: 92%;
+                width: 95%;
+                position: fixed;
+                top: 30px;
+                left: 10px;
+                background-image: url("bgtengah.jpg");
+                background-size: cover;
+                border-radius: 10px;}
+
+            .materi { width: 95%;
+                      height: 15%;
+                      position: relative;
+                      top: 2%;
+                      left: 2%;
+                      border-radius: 10px;
+                      background-image: url("bghtotal.jpg");
+                      background-size: cover;
+                      background-repeat: no-repeat;
+                      box-shadow: 2px 2px 5px black;}
+            
+            .dropbtn {
+                cursor: pointer;
+                position: fixed;
+                top: 38px;
+                right: 4%; }
+            
+            .menu{
+                position: fixed;
+                background: #f6f6f6;
+                color: #232323;			
+                height: 100%;
+                width: 50%;
+                top: 20px;
+                text-indent: 10px;
+                margin-top: 10px;
+                left: -300px;
+                -webkit-transition: left 0.2s;
+                transition: left 0.2s;
+                border: 1px solid #ccc;}
+
+		    .menu ul{
+                padding: 0; }
+
+		    .menu li{
+			    list-style-type: none;
+                padding: 10px 0px;
+                font-family: 'Gill Sans MT';}
+
+            .menu li:hover {background-color: blue;}
+
+		    .menu a{
+			    color: black;
+			    text-decoration: none;
+                font-size: 12pt;}
+            
+
+            .slide-menu-tampil{
+                left: 0 !important; }
+                
+            .albk {
+                height: 70px; 
+                width: 150px; }
+
+            .akbl {
+                height: 70px; 
+                width: 150px;}
+            
+    
+    </style>
+    <body>
+            <div class="tengah">
+                    <div class="bgisi"></div>
+            </div>
+            <div class="isi">
+                <div class="materi">
+                    <img src="hidrolisisparsial.png" type="image" style="position: relative; top: 50%; left: 3%; width: 50vw; height: 9vw;"></img>
+                    </div></br>
+                    <p style="margin: 20px 25px; text-align: left;"> <b> Hidrolisis Parsial terjadi pada dua kemungkinan reaksi garam :</b> </p>
+                        <ol style="margin: 10px 25px; text-align: justify;">
+                            <li>Garam yang anionnya berasal dari <b> asam lemah </b> dan kationnya berasal dari <b>basa kuat</b>.</li>
+                            <li>Garam yang anionnya berasal dari <b>asam kuat</b>  dan kationnya berasal dari <b>basa lemah</b>.</li>
+                        </ol>
+                        <h3 style="text-align: center; position: relative; color: rgb(2,2,70); top: -10px;"> *Pilih sub-Materi </h3>
+                    <center style="position: relative; top: -20px;">
+                    <a href="albk.html"><img class="albk" src="albk.png"></img></a>
+                    <a href="akbl.html"><img class="akbl" src="akbl.png"></img></a>
+                    </center>
+
+                    <img src="yukbelajar.png" style="height: 38vw; width: 35vw; position: absolute; bottom: 5px; left: 10px;">
+
+            </div>    
+            <div class="atas">
+                <h3 style="font-style: arial; color: white; font-size: medium; position: fixed; top: -10px; left: 10px;" > Chemistry App</h3>
+                </div>
+                <img class="dropbtn" src="menu1.png" style="width: 40px; height: 40px; position: fixed;"></img>
+                <nav class="menu">        
+                        <ul>
+                            <li><a href="berandamateri.html">Beranda Materi</a></li>
+                            <li><a href="mengenalasambasa.html"> Mengenal Asam Basa</a></li>
+                            <li><a href="mengenalhidrolisis.html">Mengenal Hidrolisis</a></li>
+                            <li><a href="htotal.html">Hidrolisis Total</a></li>
+                            <li><a href="hparsial.html">Hidrolisis Parsial</a></li>
+                            <li><a href="tidakh.html">Tidak Terhidrolisis</a></li>
+                            <li><a href="menghitungph.html"> Menghitung pH garam</a></li>
+                        </ul>
+                </nav>
+            <div class="bawah">
+                <a href="index.html"> <img src="menu.png" style="height: 50px; width: 48px; position: relative; top: -55px; left: 15px;" type="image"> </img> </a>
+            </div> 
+            <script type="text/javascript">
+                $(document).ready(function(){
+                    $('.dropbtn').click(function(){
+                        $('.menu').toggleClass("slide-menu-tampil");
+                    });
+                });
+            </script>
+    </body>
+</html>

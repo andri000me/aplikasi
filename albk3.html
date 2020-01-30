@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <title>Asam Lemah-Basa Kuat</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    </head>
+    <style>  
+            .atas {
+                width: 100%;
+                height: 30px;
+                background-color: rgb(2, 2, 70);
+                position: absolute;
+                top: 0px;
+                left: 0px; }     
+            
+            .tengah 
+            { width: 100%;
+            height: 100%;
+            background-image: url("bg4.jpg");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            position: fixed;
+            top: 30px;
+            left: 0px; }
+
+            .bawah {position: fixed;
+                bottom: 0;
+                left: 0;
+                background-color: rgb(2, 2, 70);
+                height: 4%;
+                width: 100%; }
+
+            .bgisi {
+              background-color: rgb(2, 2, 70);
+              height: 100%;
+              width: 100%;
+              position: absolute;
+              top: 0px;
+              left: 0px;} 
+            
+            .isi {
+                height: 92%;
+                width: 95%;
+                position: fixed;
+                top: 30px;
+                left: 10px;
+                background-image: url("bgtengah.jpg");
+                background-size: cover;
+                border-radius: 10px;}
+
+            .materi { width: 95%;
+                      height: 15%;
+                      position: relative;
+                      top: 2%;
+                      left: 2%;
+                      border-radius: 10px;
+                      background-image: url("bghtotal.jpg");
+                      background-size: cover;
+                      background-repeat: no-repeat;
+                      box-shadow: 2px 2px 5px black;}
+            
+            .dropbtn {
+                cursor: pointer;
+                position: fixed;
+                top: 38px;
+                right: 4%; }
+            
+            .menu{
+                position: fixed;
+                background: #f6f6f6;
+                color: #232323;			
+                height: 100%;
+                width: 50%;
+                top: 20px;
+                text-indent: 10px;
+                margin-top: 10px;
+                left: -300px;
+                -webkit-transition: left 0.2s;
+                transition: left 0.2s;
+                border: 1px solid #ccc;}
+
+		    .menu ul{
+                padding: 0; }
+
+		    .menu li{
+			    list-style-type: none;
+                padding: 10px 0px;
+                font-family: 'Gill Sans MT';}
+
+            .menu li:hover {background-color: blue;}
+
+		    .menu a{
+			    color: black;
+			    text-decoration: none;
+                font-size: 12pt;}
+            
+
+            .slide-menu-tampil{
+                left: 0 !important; }
+            
+    
+    </style>
+    <body>
+            <div class="tengah">
+                    <div class="bgisi"></div>
+            </div>
+            <div class="isi">
+                <div class="materi">
+                    <img src="hidrolisisparsial.png" type="image" style="position: relative; top: 50%; left: 3%; width: 50vw; height: 9vw;"></img>
+                    </div>
+                    <h4 style="text-align: center; 
+                            background-color: lightsalmon; 
+                            color: black; 
+                            width: 47%;
+                            height: 7%; 
+                            padding: 5px;
+                            border-bottom-right-radius: 10px;
+                            position: relative; 
+                            top: 0px;">
+                            <b>Asam lemah - Basa Kuat</b> </h4>
+                    <a href="akbl.html">
+                    <h4 style="text-align: center;
+                            background-color: rgb(2,2,70); 
+                            color: white;
+                            border-bottom-left-radius: 10px; 
+                            width: 47%; 
+                            height: 7%;
+                            padding: 5px; 
+                            position: absolute; 
+                            top: 15%; 
+                            left: 51%;"> 
+                            <b>Asam Kuat - Basa Lemah </b></h4></a>
+                <div class="isimateriparsial">
+                    <img src="alatkimia.png" style="height: 40vw; width: 60vwpx; position: absolute; top: 78%; left: 15%; opacity: 90%;">
+                    <p style="margin: 20px 25px; text-align: justify; text-indent: 25px;"> Garam yang berasal dari asam lemah dan basa kuat memiliki nilai pH yang dapat ditentukan dengan rumus:</p>
+                    <center><img src="OH.png" style="width: 40%; height: 20%; position: relative; left: 30px; top: -20px;"></center>
+                </div>
+            </div>    
+            <div class="atas">
+                <h3 style="font-style: arial; color: white; font-size: medium; position: fixed; top: -10px; left: 10px;" > Chemistry App</h3>
+            </div>
+            <img class="dropbtn" src="menu1.png" style="width: 40px; height: 40px; position: fixed;"></img>
+            <nav class="menu">        
+                    <ul>
+                        <li><a href="berandamateri.html">Beranda Materi</a></li>
+                        <li><a href="mengenalasambasa.html"> Mengenal Asam Basa</a></li>
+                        <li><a href="mengenalhidrolisis.html">Mengenal Hidrolisis</a></li>
+                        <li><a href="htotal.html">Hidrolisis Total</a></li>
+                        <li><a href="hparsial.html">Hidrolisis Parsial</a></li>
+                        <li><a href="tidakh.html">Tidak Terhidrolisis</a></li>
+                        <li><a href="menghitungph.html"> Menghitung pH garam</a></li>
+                    </ul>
+            </nav>
+            <div class="bawah">
+                <a href="index.html"> <img src="menu.png" style="height: 50px; width: 48px; position: relative; top: -55px; left: 15px;" type="image"> </img> </a>
+                <img src="next1.png" style="height: 25px; opacity: 30%; width: 30px; position:absolute; top: -38px; left: 88%;"></img>
+                <a href="albk.html"> <img src="prev.png" style="height: 25px; width: 30px; position:absolute; top: -38px; left: 70%;"></img></a>
+            </div>
+            <script type="text/javascript">
+                $(document).ready(function(){
+                    $('.dropbtn').click(function(){
+                        $('.menu').toggleClass("slide-menu-tampil");
+                    });
+                });
+            </script>
+            
+    </body>
+</html>

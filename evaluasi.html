@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <title>Soal Evaluasi</title>
+    </head>
+    <style>
+        .atas {
+                width: 100%;
+                height: 30px;
+                background-color: rgb(2, 2, 70);
+                position: absolute;
+                top: 0px;
+                left: 0px;
+        }
+        .menu {
+                width: 100%;
+                height: 70px;
+                background-color:rgb(0, 0, 100);
+                position:fixed;
+                top: 30px;
+                left: 0px; }
+        .tengah 
+            { width: 100%;
+            height: 720px;
+            background-image: url("bg4.jpg");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            position: fixed;
+            top: 100px;
+            left: 0px; }
+
+        .bawah 
+            { width: 100%;
+              height: 5%;
+              background-color: rgb(2, 2, 70);
+              position:fixed;
+              bottom: 0;
+              left: 0;  }
+
+        .bgisi 
+            { background-color: white;
+              opacity: 95%;
+              height: 100%;
+              width: 100%; }  
+
+        .isi {  height: 100%;
+                width: 95%;
+                position: fixed;
+                top: 100px;
+                left: 10px;
+                overflow: auto; }
+    </style>
+        <body>
+                <div class="tengah">
+                        <div class="bgisi">
+    
+                            </div>
+                </div>
+                <div class="isi">
+                </br><h2><center>
+                        LATIHAN SOAL<br>
+                        MATERI HIDROLISIS<br>
+                        KELAS XI MIPA<br>
+                        SMA NEGERI 1 DEMAK<br>
+                        </h2>
+                        </center>
+                        <hr>
+                        <center>
+                        <b>
+                        <table width="320" border="0">
+                        <tr>
+                            <td width="116"><b>Mata Pelajaran</b></td>
+                            <td width="185"><b>: Kimia</b></td>
+                          </tr>
+                        <tr>
+                            <td><b>Guru</b></td>
+                            <td><b>: Supratno, S.Pd., M.Si.</b></td>
+                          </tr>
+                        <tr>
+                            <td><b>Semester</b></td>
+                            <td><b>: Genap (Dua)</b></td>
+                          </tr>
+                        <tr>
+                            <td><b>Waktu</b></td>
+                            <td><b>: 90 menit</b></td>
+                          </tr>
+                        <tr>
+                            <td><b>Sifat</b></td>
+                            <td><b>: Close Book</b></td>
+                          </tr>
+                        </table>
+                        </b>
+                        </center>
+                        <hr>
+                        <?php 
+
+$pertanyaan = array(
+		0 => array(
+			'soal' => 'Senyawa dibawah ini yang dapat mengalami hidrolisis total adalah...',
+		 	'pilihan' => 'A. hidup ditempat panas, memiliki klorofil, daun muda menggulung |B. hidup ditempat panas, memiliki klorofil, memiliki bunga|C. Memiliki klorofil, memiliki spora, belum memiliki pembuluh angkut|D. Memiliki klorofil, daun muda menggulung, memiliki spora|E. Memiliki spora, memiliki bunga, belum memiliki pembuluh angkut',
+		 	'jawaban' => 'D'
+		),
+		1 => array(
+			'soal' => 'Perhatikan gambar berikut.<br><img src="img/2.jpg" style="height:150px; width:150px;"></img><br>Kelompok tumbuhan yang memiliki ciri khas tersebut adalah...',
+			'pilihan' => 'A. Bryophyta |B. Pterdophyta |C. Spermatophyta |D. Gymnosperme |E. Angiospermae',
+			'jawaban' => 'B'
+		),
+		2 => array(
+			'soal' => 'Perhatikan gambar berikut.<br><img src="img/3.jpg" style="height:300px; width:100%;"></img><br>Ketiga jenis tumbuhan di bawah ini dikelompokkan dalam kelompok yang sama. Pengelompokkan ketiga jenis tumbuhan di atas berdasarka...',
+			'pilihan' => 'A. alat perkembangbiakannya berupa spora|B. sistem perakarannya berupa akar tunggang |C. alat berkembangbiakannya berupa strobilus |D. struktur tubuh masih berupa talus |E. alat perkembangiakannya berupa bunga',
+			'jawaban' => 'A'
+		),
+		3 => array(
+			'soal' => 'Perhatikan gambar berikut.<br><img src="img/4.jpg" style="height:150px; width:150px;"></img><br>Perhatikan garfik pengaruh suhu terhadap pertumbuhan paku. Berdasarkan grafik tersebut dapat disimpulkan bahwa...',
+			'pilihan' => 'A. suhu 40 0C adalah suhu optimum dimana tumbuhan paku dapat bertahan hidup |B. tumbuhan paku memiliki suhu optimum untuk pertumbuhannya |C. suhu 10 0C adalah suhu terendah dimana tumbuhan paku masih dapat hidup |D. tumbuhan paku dapat hidup disegala suhu dan keadaan |E. suhu 20 0C adalah suhu optimum untuk pertumbuhan dari tumbuhan paku',
+			'jawaban' => 'B'			
+		),
+		4 => array(
+			'soal' => 'Pertumbuhan tumbuhan paku tidak terlepas dari faktor biotik dan abiotik. Pernyataan yang tepat mengenai faktor biotik adalah...',
+			'pilihan' => 'A. intensitas cahaya yang rendah akan menghambar pertumbuhan paku |B. pH asam merupakan kondisi yang disukai tumbuhan paku |C. kelembapan tinggi merupakan kondisi optimum untuk tumbuhan paku |D. keberadaan tumbuhan lain akan memciptakan kompetisi dengan tumbuhan paku |E. curah hujan yang tinggi akan membantu fertilisasi pada tumbuhan paku',
+			'jawaban' => 'D'			
+		),
+		5 => array(
+			'soal' => 'Perhatikan gambar berikut.<br><img src="img/6.jpg" style="height:250px; width:100%;"></img><br>Kedua jenis tumbuhan berikut berasal dari division yang sama. Tumbuhan berikut yang termasuk dalam divisio yang sama dengan tumbuhan pada gambar adalah...',
+			'pilihan' => 'A.<i>Solanum tuberosum</i> (kentang) |B. <i>Arachis hypogaea</i> (kacang tanah) |C. <i>Cycas rumphii</i> (pakis haji) |D. <i>Adiantum cuneatum</i> (suplir) |E. <i>Marchantia polymorpha</i> (lumut hati)',
+			'jawaban' => 'D'			 
+		),
+		6 => array(
+			'soal' => 'Kawasan Curug Winong berkanopi dengan ciri-ciri banyaknya tumbuhan yang tinggi dan rimbun, dimana tumbuhan tersebut menghalangi sinar matahari menembus dasar hutan. Hal ini dapat mengakibatkan...',
+			'pilihan' => 'A. intensitas cahaya tinggi |B. pH tanah menjadi tinggi |C. suhu menjadi rendah |D. kelembapan menjadi rendah |E. pH tanah menjadi rendah',
+			'jawaban' => 'C'			
+		),
+		7 => array(
+			'soal' => 'Perhatikan morfologi tumbuhan paku berikut.<br><img src="img/8.jpg" style="height:150px; width:200px;"></img><br> Nama bagian yang berlabel X adalah...',
+			'pilihan' => 'A. Rhizoid |B. Rhizome |C. Akar |D. Batang |E. Frond ',
+			'jawaban' => 'B'			
+		),
+		8 => array(
+			'soal' => 'Perhatikan gambar berikut.<br><img src="img/9.jpg" style="height:150px; width:200px;"></img><br>Perhatikan gambar Dryopteris sp. berikut! Pernyataan yang <i>tidak tepat</i> mengenai ciri-ciri dari <i>Dryopteris sp.</i> adalah...',
+			'pilihan' => 'A. <i>Dryopteris sp.</i>memiliki daun muda yang menggulung |B. <i>Dryopteris sp.</i>berkembangbiak dengan spora |C. <i>Dryopteris sp.</i>memiliki daun majemuk |D. <i>Dryopteris sp.</i>tidak memiliki bunga |E. <i>Dryopteris sp.</i>memiliki daun tunggal',
+			'jawaban' => 'E'			
+		),
+		9 => array(
+			'soal' => 'Perhatikan gambar berikut.<br><img src="img/10.jpg" style="height:150px; width:200px;"></img><br>Perhatikan gambar daur hidup tumbuhan paku berikut.Fase yang akan menghasilkan gamet jantan dan betina ditunjukkan oleh nomor...',
+			'pilihan' => 'A. 1 |B. 2 |C. 3 |D. 4 |E. 5',
+			'jawaban' => 'B'			
+		),
+		10 => array(
+			'soal' => 'Perhatikan gambar berikut.<br><img src="img/11.jpg" style="height:150px; width:150px;"></img><br>Pernyataan yang tepat berdasarkan gambar adalah...',
+			'pilihan' => 'A. protonema, fase gametofit |B. protalium, fase gametofit |C. protalium, fase sporofit |D. protonema,  fase sporofit muda |E. protalium, fase sporofit ',
+			'jawaban' => 'B'			
+		),
+		11 => array(
+			'soal' => 'Pasangan tumbuhan paku dan manfaat yang benar ditunjukkan oleh...',
+			'pilihan' => 'A. <i>Lycopodium cernuum</i> bermanfaat untuk pupuk hijau persawahan |B. <i>Marsilea crenata</i> bermanfaat untuk obat batuk |C. <i>Adiantum cuneatum</i> bermanfaat untuk tanaman hias |D. <i>Azolla pinnata</i> bermanfaat untuk bahan makanan |E. <i>Asplenium nidus</i> bermanfaat untuk bahan kerajinan tangan',
+			'jawaban' => 'C'			
+		),
+		12 => array(
+			'soal' => 'Paku <i>Azolla pinnata</i> bisa dimanfaatkan sebagai pupuk karena...',
+			'pilihan' => 'A. akarnya bisa menyerap zat hara lebih banyak |B. bersimbiosis dengan alga hijau-biru fotosintetik |C. bersimbiosis dengan alga hijau-biru pengikat nitrogen |D. bersimbiosis dengan bakteri nitrifikasi |E. akarnya bisa meningkatkan nitrogen bebas dari udara',
+			'jawaban' => 'C'			
+		),
+		13 => array(
+			'soal' => 'Di suatu areal sawah dijumpai tanaman semanggi (Marsilea crenata) yang tumbuh subur dan lebar, tanaman ini mengganggu tanaman padi. Tindakan yang tepat dan bermanfaat untuk mengatasi tanaman tersebut agar tidak menjadi gulma adalah...',
+			'pilihan' => 'A. disiangi, kemudia dibuang |B. disiangi, kemudian dibenamkan di tanah |C. disiangi, kemudian dimanfaatkan untuk konsumsi |D. disiangi, kemudian untuk makanan ternak |E. dibiarkan, agar berkompetisi unsur hara dengan padi',
+			'jawaban' => 'C'			
+		),
+		14 => array(
+			'soal' => 'Salah satu peranan tumbuhan paku adalah sebagai pionir dalam suksesi hutan. Berikut ini pernyatan yang tepat dengan peranan tumbuhan paku sebagai pionir adalah...',
+			'pilihan' => 'A. tumbuhan paku akan mengawali pertumbuhan agar terbentuknya habitat tumbuhan lain |B. tumbuhan paku akan tumbuh setelah kondisi hutan penuhi pepohonan |C. tumbuhan paku akan mematikan tumbuhan lain yang ada disekitarnya |D. tumbuhan paku akan tumbuh setelah rerumputan karena masih ada biji yang tertinggal di tanah |E. tumbuhan paku akan bersaing dengan rumput untuk mendapatkan nutrisi dan cahaya',
+			'jawaban' => 'A'			
+		)
+
+	);
+
+if(isset($_GET['pilihan'])) {
+	$total = 0;
+
+	foreach($_GET['pilihan'] as $a => $b) 
+	
+		if(substr($b, 0, 1) == $pertanyaan[$a]['jawaban']) 
+			$total++;
+			$hasil = $total/15*10;
+			echo "
+				<script type='text/javascript'>
+					alert('Skor anda : ".number_format($hasil,2)."');
+					var jwb = confirm('Main Lagi?');
+					if(jwb) {
+						window.location ='index.php';
+					} else {
+						window.location ='../../index.html';
+					}
+				</script>
+			";	
+}
+$no = 1;
+$layout = '
+	<div>
+		<div><br>%s. %s</div>
+		<div>%s</div>
+	</div>
+';
+?>
+
+<form>
+
+	<?php
+
+
+	foreach($pertanyaan as $key => $value) 
+	{	
+		$pilihan = explode('|', $value['pilihan']);
+		$radio = "";
+		foreach($pilihan as $h => $i)
+		{
+			$radio .= '<label><input type="radio" value="'.$i.'" name="pilihan['.$key.']">'.$i. '</label><br>';
+		}
+
+		printf($layout, $no++, $value['soal'], $radio);
+
+	}
+
+	?>
+	<br><br><br>
+<input type="submit" value="Submit" name="hSkor">
+</form>
+
+<?php 
+
+if(isset($_GET['hSkor']) == 'Submit') {
+	echo "
+	<script type='text/javascript'>
+	alert('Tidak boleh kosong');
+	</script>
+	";
+}
+
+?>
+                            <u><h3 style="text-indent: 5px;">
+                            SOAL PILIHAN GANDA</h3>
+                            </u></p>
+                        <form id="form1" name="form1" method="post" action="">
+                             <ol start="1">
+                             <li style="margin-right: 10px;">Senyawa dibawah ini yang dapat mengalami hidrolisis total adalah...</li>
+                             <br>
+                             <ol start="1" type="A">
+                             <i>
+                             <li><input type="radio" name="NO1" value="A">CH<sub>3</sub>COONa</li>
+                             <li><input type="radio" name="NO1" value="B">NH<sub>4</sub>Cl </li>
+                             <li><input type="radio" name="NO1" value="C">CH<sub>3</sub>COONH<sub>4</sub></li>
+                             <li><input type="radio" name="NO1" value="D">NaHCO<sub>3</sub></li>
+                             <li><input type="radio" name="NO1" value="E">(NH<sub>4</sub>)<sub>2</sub>SO<sub>4</sub></li>
+                             </i>  
+                            </ol></ol>
+                                <ol style="margin-right: 15px; text-align: justify;" start="2">
+                                <li> Hitunglah pH larutan 500 mL CH3COONa yang mengandung CH3COONa 0,082 gram…. (Ka CH3COOH = 2 x 10-5)</li>
+                                <br>
+                                <ol start="1" type="A">
+                                <i>
+                                <li><input type="radio" name="NO2" value="A"> 8</li>
+                                <li><input type="radio" name="NO2" value="B"> 6</li>
+                                <li><input type="radio" name="NO2" value="C"> 6 - log 2</li>
+                                <li><input type="radio" name="NO2" value="D"> 8 + log 5</li>
+                                <li><input type="radio" name="NO2" value="E"> 6 + log 5</li>
+                                </i>
+                                </ol></ol>
+                                <br>
+                                <ol style="margin-right: 10px;" start="3">
+                                <li>pH larutan yang diperoleh dengan mencampurkan 250 mL larutan amonia 0,1 M (Kb NH3 = 10-5), 250 mL HCl 0,1 M dalam 500 mL air adalah …. </li>
+                                <br>
+                                 <ol start="1" type="A">
+                                <i>
+                                <li><input type="radio" name="NO3" value="A"> 6 - log 5</li>
+                                <li><input type="radio" name="NO3" value="B"> 8 - log 5</li>
+                                <li><input type="radio" name="NO3" value="C"> 9 - log 5</li>
+                                <li><input type="radio" name="NO3" value="D"> 8 + log 5</li>
+                                <li><input type="radio" name="NO3" value="E"> 6 + log 5</li>
+                                </i>
+                                   </ol></ol>
+                                <br>
+                                <li>Garam yang dalam air dapat terhidrolisis membentuk larutan dengan pH lebih kecil dari 7 adalah …. </li>
+                                <br>
+                                 <ol start="1" type="A">
+                                     <i>
+                                <li><input type="radio" name="NO4" value="A"> NaCl</li>
+                                <li><input type="radio" name="NO4" value="B"> NH4Cl</li>
+                                <li><input type="radio" name="NO4" value="C"> NaNO3</li>
+                                <li><input type="radio" name="NO4" value="D"> CH3COOK</li>
+                                <li><input type="radio" name="NO4" value="E"> NH4CN</li>
+                                </i>
+                                   </ol>
+                                <br>
+                                <li>Diketahui seorang petani ingin menanam gandum dengan varietas unggul. Dia tahu bahwa gandum dapat tumbuh pada pH tanah sebesar 6,0. Garam yang dapat digunakan sebagai pupuk adalah ….
+                                 </li>
+                                <br>
+                                 <ol start="1" type="A">
+                                     <i>
+                                <li><input type="radio" name="NO5" value="A"> (NH4)2NO3</li>
+                                <li><input type="radio" name="NO5" value="B"> Na2CO3</li>
+                                <li><input type="radio" name="NO5" value="C"> NaCl</li>
+                                <li><input type="radio" name="NO5" value="D"> NaCN</li>
+                                <li><input type="radio" name="NO5" value="E"> Na-Benzoat</li>
+                                </i>
+                                   </ol>
+                                <br>
+                                <li> Shinta melakukan eksperimen di laboratorium dengan membuat larutan garam amonium sulfat dengan volume sebanyak 200 mL dengan pH = 5. Massa ammonium sulfat yang dilarutkan dalam air jika diketahui dalam kemasan botol tertera Kb NH3 = 1 x 10-5 dan Mr = 132 gram/mol adalah ….
+                                 </li>
+                                <br>
+                                 <ol start="1" type="A">
+                                     <i>
+                                <li><input type="radio" name="NO6" value="A"> 2,64 gram</li>
+                                <li><input type="radio" name="NO6" value="B"> 1,32 gram</li>
+                                <li><input type="radio" name="NO6" value="C"> 13,2 gram</li>
+                                <li><input type="radio" name="NO6" value="D"> 0,66 gram</li>
+                                <li><input type="radio" name="NO6" value="E"> 6,60 gram</li>
+                                </i>
+                                   </ol>
+                                <br>
+                                <li>Yang bukan merupakan kelebihan Linux adalah...</li>
+                                <br>
+                                 <ol start="1" type="A">
+                                     <i>
+                                <li><input type="radio" name="NO7" value="a">Memiliki Support hardware yang banyak</li>
+                                <li><input type="radio" name="NO7" value="b">Bersifat fleksibel,dapat dikonfigurasi sesuai dengan kebutuhan</li>
+                                <li><input type="radio" name="NO7" value="c">Teks Mode (dapat menghemat sumber daya computer/resource)</li>
+                                <li><input type="radio" name="NO7" value="d">Dapat dikonfigurasi dan dijalankan secara remote/jarak jauh(diperbaiki)</li>
+                                <li><input type="radio" name="NO7" value="e">Memberikan Kesempatan pada pengguna untuk system operasi lain</li>
+                                </i>
+                                   </ol>
+                                <br>
+                                <li>Macam-macam Distro...</li>
+                                <br>
+                                 <ol start="1" type="A">
+                                     <i>
+                                <li><input type="radio" name="NO8" value="a">Redhat, avast, xandros</li>
+                                <li><input type="radio" name="NO8" value="b">Suse Linux, Winbi, Winzip</li>
+                                <li><input type="radio" name="NO8" value="c">Memphis, knoppix, Arobat</li>
+                                <li><input type="radio" name="NO8" value="d">Mandrake, transtool, debian</li>
+                                <li><input type="radio" name="NO8" value="e">Redhat, Slackware, Mandrake</li>
+                                </i>
+                                   </ol>
+                                <br>
+                                <li>Siapakah yang pertama kali menciptakan sistem operasi LINUX?</li>
+                                <br>
+                                 <ol start="1" type="A">
+                                     <i>
+                                <li><input type="radio" name="NO9" value="a">Andrew Tanen-Baum </li>
+                                <li><input type="radio" name="NO9" value="b">Bill Gates</li>
+                                <li><input type="radio" name="NO9" value="c">Linus Trovalds</li>
+                                <li><input type="radio" name="NO9" value="d">Linus Torvalds</li>
+                                <li><input type="radio" name="NO9" value="e">Tim Berners Lee</li>
+                                </i>
+                                   </ol>
+                                <br>
+                                <li>Perhatikan beberapa sifat-sifat system operasi dibawah ini :</li>
+                                <br>
+                                   <ol start="1" type="I">
+                                <li>Freeware</li>
+                                <li> Mutitasking</li>
+                                <li>Berbasis GUI</li>
+                                <li>Open source</li>
+                                <li>mempunyai banyak support hardware</li>
+                                </ol>
+                                <p align="left">
+                                Dari beberapa pernyataan diatas yang merupakan sifat yang terdapat pada LINUX adalah... </p>
+                                <ol start="1" type="A">
+                                     <i>
+                                <li><input type="radio" name="NO10" value="a">I, II, III</li>
+                                <li><input type="radio" name="NO10" value="b">II, III ,V</li>
+                                <li><input type="radio" name="NO10" value="c">I, III, V</li>
+                                <li><input type="radio" name="NO10" value="d">I, IV, V</li>
+                                <li><input type="radio" name="NO10" value="e">I, IV, II</li>
+                                </i>
+                                   </ol>
+                                   </form>
+                        </div>
+                <div class="atas">
+                        <h3 style="font-style: arial; color: white; text-indent: 10px; font-size: medium; position: fixed; top: -13px; left: 0 auto;"> 
+                            Chemistry App                </h3>
+                    </div>
+                <div class="menu">
+                        <h2 style="background-color: white; width: 170px; height: 40px; position: relative; top: -8px; left: 0px; border-top-right-radius: 10px;"></h2>
+                        <h3 style="color: black; position: relative; top: -60px; left: 8px;"> LATIHAN SOAL </h3>
+                </div>
+                <div class="bawah">
+                    <a href="index.html"> <img src="menu.png" style="height: 50px; width: 48px; position: relative; top: -55px; left: 15px;" type="image"> </img> </a>     
+                </div>
+        </body>
+</html>

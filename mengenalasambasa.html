@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <title>Mengenal Asam Basa</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    </head>
+    <style>  
+            .atas {
+                width: 100%;
+                height: 30px;
+                background-color: rgb(2, 2, 70);
+                position: absolute;
+                top: 0px;
+                left: 0px; }     
+            
+            .tengah 
+            { width: 100%;
+            height: 100%;
+            background-image: url("bg4.jpg");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            position: fixed;
+            top: 30px;
+            left: 0px; }
+
+            .bawah {position: fixed;
+                bottom: 0;
+                left: 0;
+                background-color: rgb(2, 2, 70);
+                height: 4%;
+                width: 100%; }
+
+            .bgisi {
+              background-color: rgb(2, 2, 70);
+              height: 100%;
+              width: 100%;
+              position: absolute;
+              top: 0px;
+              left: 0px;} 
+            
+            .isi {
+                height: 92%;
+                width: 95%;
+                position: fixed;
+                top: 30px;
+                left: 10px;
+                background-image: url("bgtengah.jpg");
+                background-size: cover;
+                border-radius: 10px;
+                overflow: scroll;}
+
+            .materi { width: 91%;
+                      height: 15%;
+                      position: fixed;
+                      top: 6%;
+                      left: 5%;
+                      border-radius: 10px;
+                      background-image: url("asambasa2.jpg");
+                      background-size: cover;
+                      background-repeat: no-repeat;
+                      box-shadow: 2px 2px 5px black;}
+            
+            .dropbtn {
+                cursor: pointer;
+                position: fixed;
+                top: 38px;
+                right: 4%; }
+            
+            .menu{
+                position: fixed;
+                background: #f6f6f6;
+                color: #232323;			
+                height: 100%;
+                width: 50%;
+                top: 20px;
+                text-indent: 10px;
+                margin-top: 10px;
+                left: -300px;
+                -webkit-transition: left 0.2s;
+                transition: left 0.2s;
+                border: 1px solid #ccc;}
+
+		    .menu ul{
+                padding: 0; }
+
+		    .menu li{
+			    list-style-type: none;
+                padding: 10px 0px;
+                font-family: 'Gill Sans MT';}
+
+            .menu li:hover {background-color: blue;}
+
+		    .menu a{
+			    color: black;
+			    text-decoration: none;
+                font-size: 12pt;}
+            
+
+            .slide-menu-tampil{
+			    left: 0 !important; }
+
+    </style>
+<body>
+        <div class="tengah">
+                <div class="bgisi"></div>
+                <div class="isi" style="cursor: default;">
+                </br></br></br></br></br>
+                   <p style="text-align: justify; margin-right: 20px; margin-left: 20px; position: relative; top: 30px;"> Dalam mempelajari materi hidrolisis garam, peserta didik harus memahami konsep asam dan basa terlebih dahulu. Pada pembahasan larutan asam dan basa terdahulu telah dipelajari bahwa reaksi asam dan basa menghasilkan garam. Asam terdiri atas asam kuat dan asam lemah.</p>
+                   <p style="text-align: justify; margin-right: 20px; margin-left: 20px; position: relative; top: 20px;"> Berikut adalah daftar asam dan basa yang dapat membantu untuk menghafalkan nama nama senyawa dan jenisnya.</p>
+                   <h3 style="background-color: rgb(2, 2, 70); text-align: center; color: white; position: relative; top: 10px;">Daftar senyawa asam</h3>
+                   <Table style="position: relative; top: 0px; left: 10%; width: 80%; text-align: center;" border="1">
+                       <th colspan="3" style="text-align: center; width: 100%; background-color: yellow;"> Asam Kuat</th>
+                       <tr>
+                       <td> HCl </td> <td colspan="2"> Asam Klorida</td>
+                       </tr>
+                       <tr>    
+                       <td> H<sub>2</sub>SO<sub>4</sub> </td> <td colspan="2"> Asam Sulfat</td>
+                       </tr>
+                       <tr>
+                       <td> HNO<sub>3</sub> </td> <td colspan="2"> Asam Nitrat</td>
+                       </tr>
+                       <tr>
+                       <td> HBr </td> <td colspan="2"> Asam Bromida</td>
+                       </tr>
+                       <tr>
+                       <td> HI </td> <td colspan="2"> Asam Iodida</td>
+                       </tr>
+                       <tr>
+                       <td> HClO<sub>3</sub> </td> <td colspan="2"> Asam Klorat</td>
+                       </tr>
+                       <tr>
+                       <td> HClO<sub>4</sub> </td> <td colspan="2"> Asam Perklorat</td>
+                       </tr>
+                       <tr>
+                       <td> HBrO<sub>3</sub> </td> <td colsp"2"> Asam Bromit</td>
+                       </tr>
+                       <tr>
+                       <td> HBrO<sub>4</sub></td> <td colsp"2"> Asam Perbromat</td>
+                       </tr>
+                   </Table>
+                   <table style="position: relative; top: 10px; left: 10%; text-align: center; width: 80%;" border="1">
+                   <th colspan="3" style="text-align: center; width: 100%; background-color: yellow;"> Asam Lemah</th>
+                       <tr>
+                       <td> CH3COOH </td> <td colspan="2"> Asam Asetat</td>
+                       </tr>
+                       <tr>    
+                       <td> H2BO3 </td> <td colspan="2"> Asam Borat</td>
+                       </tr>
+                       <tr>
+                       <td> H2CO3 </td> <td colspan="2"> Asam Karbonat</td>
+                       </tr>
+                       <tr>
+                       <td> HCN </td> <td colspan="2"> Asam Sianida</td>
+                       </tr>
+                       <tr>
+                       <td> HClO </td> <td colspan="2"> Asam Hipoklorit</td>
+                       </tr>
+                       <tr>
+                       <td> H2SO3 </td> <td colspan="2"> Asam Sulfit</td>
+                       </tr>
+                       <tr>
+                       <td> H3PO4 </td> <td colspan="2"> Asam Fosfat</td>
+                       </tr>
+                       <tr>
+                       <td> HCOOOH </td> <td colspan="2"> Asam Format</td>
+                       </tr>
+                       <tr>
+                       <td> HF </td> <td colspan="2"> Asam Fluorida</td>
+                       </tr>
+                       <tr>
+                       <td> H2S </td> <td colspan="2"> Asam Sulfida</td>
+                       </tr>
+                       <tr>
+                       <td> H2BO3 </td> <td colspan="2"> Asam Borat</td>
+                       </tr>
+                       <tr>
+                       <td> H2SiO3 </td> <td colspan="2"> Asam Silikat</td>
+                       </tr>
+                   </table>
+                </br>
+        
+                <h3 style="background-color: rgb(2, 2, 70); text-align: center; color: white; position: relative; top: 0px;">Daftar senyawa basa</h3>
+                <Table style="position: relative; top: 0px; left: 10%; text-align: center; width: 80%;" border="1">
+                    <th colspan="3" style="text-align: center; width: 100%; background-color: yellow;"> Basa Kuat</th>
+                    <tr>
+                    <td> LiOH </td> <td colspan="2"> Litium Hidroksida</td>
+                    </tr>
+                    <tr>    
+                    <td> NaOH </td> <td colspan="2"> Natrium Hidroksida</td>
+                    </tr>
+                    <tr>
+                    <td> KOH </td> <td colspan="2"> Kalium Hidroksida</td>
+                    </tr>
+                    <tr>
+                    <td> Ca(OH)2 </td> <td colspan="2"> Kalsium Hidroksida</td>
+                    </tr>
+                    <tr>
+                    <td> RbOH </td> <td colspan="2"> Rubidium Hidroksida</td>
+                    </tr>
+                    <tr>
+                    <td> Sr(OH)2 </td> <td colspan="2"> Stronsium Hidroksida</td>
+                    </tr>
+                    <tr>
+                    <td> Ba(OH)2 </td> <td colspan="2"> Barium Hidroksida</td>
+                    </tr>
+                </Table>
+                <table style="position: relative; top: 20px; left: 10%; text-align: center; width: 80%;" border="1">
+                <th colspan="3" style="text-align: center; width: 100%; background-color: yellow;"> Basa Lemah</th>
+                    <tr>
+                    <td> NH3 </td> <td colspan="2"> Amoniak</td>
+                    </tr>
+                    <tr>    
+                    <td> Fe(OH)2 </td> <td colspan="2"> Besi (II) Hidroksida</td>
+                    </tr>
+                    <tr>
+                    <td> NH2OH </td> <td colspan="2"> Hidroksilamine</td>
+                    </tr>
+                    <tr>
+                    <td> Fe(OH)3 </td> <td colspan="2"> Besi (III) Oksida</td>
+                    </tr>
+                    <tr>
+                    <td> Al(OH)3 </td> <td colspan="2"> Aluminium Hidroksida</td>
+                    </tr>
+                    <tr>
+                    <td> NH4OH </td> <td colspan="2"> Amonium Hidroksida</td>
+                    </tr>
+                    <tr>
+                    <td> CH3NH3OH </td> <td colspan="2"> Metilamin Hidroksida</td>
+                    </tr>
+                </table></br></br></br></br></br></br>
+                <div class="materi">
+                    <img src="asambasa.png" type="image" style="position: relative; top: 50%; left: 3%; width: 40vw; height: 10vw;"></img>
+                    </div>
+                </div>
+        </div>
+        <div class="atas">
+            <h3 style="font-style: arial; color: white; font-size: medium; position: fixed; top: -10px; left: 10px;" > Chemistry App</h3>
+            </div>
+            <img class="dropbtn" src="menu1.png" style="width: 40px; height: 40px; position: fixed;"></img>
+            <nav class="menu">        
+                    <ul>
+                        <li><a href="berandamateri.html">Beranda Materi</a></li>
+                        <li><a href="mengenalasambasa.html"> Mengenal Asam Basa</a></li>
+                        <li><a href="mengenalhidrolisis.html">Mengenal Hidrolisis</a></li>
+                        <li><a href="htotal.html">Hidrolisis Total</a></li>
+                        <li><a href="hparsial.html">Hidrolisis Parsial</a></li>
+                        <li><a href="tidakh.html">Tidak Terhidrolisis</a></li>
+                        <li><a href="menghitungph.html"> Menghitung pH garam</a></li>
+                    </ul>
+            </nav>
+        <div class="bawah">
+            <a href="index.html"> <img src="menu.png" style="height: 50px; width: 48px; position: relative; top: -55px; left: 15px;" type="image"> </img> </a></div>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.dropbtn').click(function(){
+                    $('.menu').toggleClass("slide-menu-tampil");
+                });
+            });
+        </script>
+        
+</body>
+</html>
